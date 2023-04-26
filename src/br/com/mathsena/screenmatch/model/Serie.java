@@ -1,11 +1,24 @@
 package br.com.mathsena.screenmatch.model;
 
-public class Serie extends Titulo{
+import calculos.Classificacao;
+
+public class Serie extends Titulo  {
 
     private int temporadas;
     private boolean ativa;
     private int epsPorTemporada;
+
+    public int getVisualizacoes() {
+        return visualizacoes;
+    }
+
+    public void setVisualizacoes(int visualizacoes) {
+        this.visualizacoes = visualizacoes;
+    }
+
     private int minPorEp;
+
+    private int visualizacoes;
 
     public int getTemporadas() {
         return temporadas;
@@ -43,4 +56,5 @@ public class Serie extends Titulo{
     public int getDuracaoEmMinutos() {
         return temporadas*minPorEp;
     }
+
 }

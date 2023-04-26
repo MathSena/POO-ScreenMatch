@@ -1,6 +1,8 @@
 package br.com.mathsena.screenmatch.model;
 
-public class Filme extends Titulo{
+import calculos.Classificacao;
+
+public class Filme extends Titulo implements Classificacao {
 
     private String diretor;
 
@@ -10,5 +12,10 @@ public class Filme extends Titulo{
 
     public void setDiretor(String diretor) {
         this.diretor = diretor;
+    }
+
+    @Override
+    public int getClassificacao() {
+        return (int) (getSomaAvaliacao()/2);
     }
 }

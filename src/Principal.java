@@ -1,6 +1,8 @@
+import br.com.mathsena.screenmatch.model.Episodio;
 import br.com.mathsena.screenmatch.model.Filme;
 import br.com.mathsena.screenmatch.model.Serie;
 import calculos.CalculadoraDeTempo;
+import calculos.FiltroRecomendacao;
 
 public class Principal {
     public static void main(String[] args) {
@@ -39,6 +41,15 @@ public class Principal {
         calculadoraDeTempo.inclui(outroFilme);
         calculadoraDeTempo.inclui(lost);
         System.out.println(calculadoraDeTempo.getTempoTotal());
+
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+        filtro.filtra(meuFilme);
+
+        Episodio ep = new Episodio();
+        ep.setNumero(1);
+        ep.setSerie(lost);
+        ep.setVisualizacoes(100);
+        filtro.filtra(ep);
 
 
 
