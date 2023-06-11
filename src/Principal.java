@@ -25,6 +25,10 @@ public class Principal {
         maisUmFilme.setAnoDeLancamento(2009);
         maisUmFilme.setDuracaoEmMinutos(200);
 
+        Filme filmeComConstrutor = new Filme("Jogos Mortais");
+        filmeComConstrutor.setAnoDeLancamento(2004);
+        filmeComConstrutor.setDuracaoEmMinutos(200);
+
         ArrayList<Filme> listaFilmes = new ArrayList<>();
         listaFilmes.add(meuFilme);
         listaFilmes.add(outroFilme);
@@ -32,7 +36,8 @@ public class Principal {
 
         System.out.println("Tamanho do Arraylist: " + listaFilmes.size());
         System.out.println("Primeiro Filme: " + listaFilmes.get(0).getNome());
-        System.out.println(listaFilmes.getClass());
+        System.out.println(listaFilmes);
+
 
 
 
