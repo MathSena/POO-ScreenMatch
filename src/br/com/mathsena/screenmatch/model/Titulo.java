@@ -9,6 +9,19 @@ public class Titulo {
     private int totalDeAvaliacoes;
     private int duracaoEmMinutos;
 
+    public Titulo(String nome, int anoDeLancamento, boolean incluidoNoPlano, double somaAvaliacao, int totalDeAvaliacoes, int duracaoEmMinutos) {
+        this.nome = nome;
+        this.anoDeLancamento = anoDeLancamento;
+        this.incluidoNoPlano = incluidoNoPlano;
+        this.somaAvaliacao = somaAvaliacao;
+        this.totalDeAvaliacoes = totalDeAvaliacoes;
+        this.duracaoEmMinutos = duracaoEmMinutos;
+    }
+
+    public Titulo() {
+
+    }
+
     public int getTotalDeAvaliacoes(){
         return totalDeAvaliacoes;
     }

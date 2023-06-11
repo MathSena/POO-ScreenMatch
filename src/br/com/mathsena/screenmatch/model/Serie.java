@@ -8,6 +8,15 @@ public class Serie extends Titulo  {
     private boolean ativa;
     private int epsPorTemporada;
 
+    public Serie(String nome, int anoDeLancamento, boolean incluidoNoPlano, double somaAvaliacao, int totalDeAvaliacoes, int duracaoEmMinutos) {
+        super(nome, anoDeLancamento, incluidoNoPlano, somaAvaliacao, totalDeAvaliacoes, duracaoEmMinutos);
+    }
+
+    public Serie() {
+        super();
+
+    }
+
     public int getVisualizacoes() {
         return visualizacoes;
     }
