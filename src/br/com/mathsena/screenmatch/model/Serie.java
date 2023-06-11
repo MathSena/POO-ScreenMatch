@@ -66,4 +66,8 @@ public class Serie extends Titulo  {
         return temporadas*minPorEp;
     }
 
+    @Override
+    public String toString() {
+        return "Serie: " + this.getNome() + " ano de lançamento: " + this.getAnoDeLancamento();
+    }
 }

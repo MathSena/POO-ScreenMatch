@@ -1,3 +1,5 @@
+package principal;
+
 import br.com.mathsena.screenmatch.model.Episodio;
 import br.com.mathsena.screenmatch.model.Filme;
 import br.com.mathsena.screenmatch.model.Serie;

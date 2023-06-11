@@ -27,4 +27,10 @@ public class Filme extends Titulo implements Classificacao {
     public int getClassificacao() {
         return (int) (getSomaAvaliacao()/2);
     }
+
+    @Override
+    public String toString() {
+        return "Filme: " + this.getNome() + " ano de lançamento: " + this.getAnoDeLancamento();
+
+    }
 }
