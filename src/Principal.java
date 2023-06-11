@@ -4,6 +4,8 @@ import br.com.mathsena.screenmatch.model.Serie;
 import calculos.CalculadoraDeTempo;
 import calculos.FiltroRecomendacao;
 
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
         System.out.println("Orientação a Objetos - JAVA!");
@@ -17,6 +19,21 @@ public class Principal {
         outroFilme.setNome("Avatar 2");
         outroFilme.setAnoDeLancamento(2023);
         outroFilme.setDuracaoEmMinutos(200);
+
+        Filme maisUmFilme = new Filme();
+        maisUmFilme.setNome("Bastardos Inglórios");
+        maisUmFilme.setAnoDeLancamento(2009);
+        maisUmFilme.setDuracaoEmMinutos(200);
+
+        ArrayList<Filme> listaFilmes = new ArrayList<>();
+        listaFilmes.add(meuFilme);
+        listaFilmes.add(outroFilme);
+        listaFilmes.add(maisUmFilme);
+
+        System.out.println("Tamanho do Arraylist: " + listaFilmes.size());
+        System.out.println("Primeiro Filme: " + listaFilmes.get(0).getNome());
+        System.out.println(listaFilmes.getClass());
+
 
 
         meuFilme.exibeFichaTecnica();
