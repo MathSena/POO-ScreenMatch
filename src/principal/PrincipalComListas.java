@@ -4,9 +4,7 @@ import br.com.mathsena.screenmatch.model.Filme;
 import br.com.mathsena.screenmatch.model.Serie;
 import br.com.mathsena.screenmatch.model.Titulo;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.*;
 
 public class PrincipalComListas {
 
@@ -61,7 +59,7 @@ public class PrincipalComListas {
             }
         }
 
-        ArrayList<String> buscaPorArtista = new ArrayList<>();
+        List<String> buscaPorArtista = new LinkedList<>();
         buscaPorArtista.add("Adam Sandler");
         buscaPorArtista.add("Sandra Bullock");
         buscaPorArtista.add("Kiefer Sutherland");
